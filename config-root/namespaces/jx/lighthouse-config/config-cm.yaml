@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - geowalrus4gh/jx3-kubernetes
-      target_url: http://lighthouse-jx.mydomain.com/merge/status
+      target_url: http://lighthouse-jx.13.214.197.247.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
