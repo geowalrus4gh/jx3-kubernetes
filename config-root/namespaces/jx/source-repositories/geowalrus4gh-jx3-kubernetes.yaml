@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: geowalrus4gh
+    provider: github
+    repository: jx3-kubernetes
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: geowalrus4gh-jx3-kubernetes
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/geowalrus4gh/jx3-kubernetes.git
+  org: geowalrus4gh
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-kubernetes
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/geowalrus4gh/jx3-kubernetes
