@@ -6,6 +6,10 @@ data:
       repos:
       - geowalrus4gh/jx3-kubernetes
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - geowalrus4gh/spring-boot-rest-prometheus-java17
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +25,11 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      geowalrus4gh/spring-boot-rest-prometheus-java17:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +37,20 @@ data:
     plugins:
       geowalrus4gh/jx3-kubernetes:
       - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      geowalrus4gh/spring-boot-rest-prometheus-java17:
       - approve
       - assign
       - help
@@ -53,6 +76,11 @@ data:
     - repos:
       - geowalrus4gh/jx3-kubernetes
       trusted_org: todo
+    - repos:
+      - geowalrus4gh/spring-boot-rest-prometheus-java17
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
