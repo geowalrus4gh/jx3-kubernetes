@@ -14,7 +14,7 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: registry-1.docker.io/geowalrus
+    registry: ghcr.io
   environments:
   - key: dev
     owner: geowalrus4gh
