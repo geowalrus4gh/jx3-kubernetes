@@ -25,12 +25,13 @@ jxRequirements:
     clusterName: kind
     devEnvApprovers:
     - todo
+    dockerRegistryOrg: geowalrus
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: docker.io/geowalrus
+    registry: docker.io
   environments:
   - key: dev
     owner: geowalrus4gh

@@ -11,4 +11,5 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: "--skip-unused-stages --snapshotMode=redo"
-  docker.registry: docker.io/geowalrus
+  docker.registry: docker.io
+  docker.registry.org: geowalrus
