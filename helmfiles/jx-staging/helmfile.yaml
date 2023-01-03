@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.13.214.197.247.nip.io
+releases:
+- chart: dev/spring-boot-rest-prometheus-java17
+  version: 0.0.11
+  name: spring-boot-rest-prometheus-java17
+templates: {}
+renderedvalues: {}
